@@ -57,3 +57,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# mpower_energy
+MPower Energy website built with Laravel, featuring company information, energy solutions, and business contact details.
