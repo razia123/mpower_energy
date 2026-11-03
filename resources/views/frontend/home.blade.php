@@ -89,7 +89,7 @@
                         </div>
                         <div class="col col-sm-4">
                             <div class="get-quote">
-                                <a href="#" class="theme-btn">Download Brochure</a>
+                                <a href="{{ route('brochure.download') }}" class="theme-btn">Download Brochure</a>
                             </div>
                         </div>
                     </div>
@@ -112,25 +112,7 @@
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
                         <button class="close-navbar"><i class="fa fa-close"></i></button>
                         <ul class="nav navbar-nav">
-                            <li class="menu-item-has-children">
-                                <a href="#">Home</a>
-                                {{-- <ul class="sub-menu">
-                                    <li><a href="index-2.html">Home Style 1</a></li>
-                                    <li><a href="index-3.html">Home Style 2</a></li>
-                                    <li><a href="index-4.html">Home Style 3</a></li>
-                                    <li><a href="index-5.html">Home Style 4</a></li>
-                                    <li><a href="index-6.html">Home Style 5</a></li>
-                                    <li><a href="index-7.html">Home Style 6</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#Level3">Thidr level</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Level3</a></li>
-                                            <li><a href="#">Level3</a></li>
-                                            <li><a href="#">Level3</a></li>
-                                        </ul>
-                                    </li>
-                                </ul> --}}
-                            </li>
+                            <li><a href="home.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             {{-- <li><a href="services.html">Services</a></li> --}}
                              <li class="menu-item-has-children">
@@ -162,7 +144,7 @@
                                 <h2>We provide the best <span>Industrial</span> Services</h2>
                                 {{-- <p>An unknown printer took a galley of type and scrambled it to make a type specimen book.</p> --}}
                                 <div class="btns">
-                                    <a href="#" class="theme-btn">About us</a>
+                                    <a href="#" class="theme-btn">All Services</a>
                                     {{-- <a href="#" class="theme-btn-s2">Explore</a> --}}
                                 </div>
                             </div>
@@ -178,7 +160,7 @@
                                 <h2>We provide the best <span>Industrial</span> Services</h2>
                                 {{-- <p>An unknown printer took a galley of type and scrambled it to make a type specimen book.</p> --}}
                                 <div class="btns">
-                                    <a href="#" class="theme-btn">About us</a>
+                                    <a href="#" class="theme-btn">All Services</a>
                                     {{-- <a href="#" class="theme-btn-s2">Explore</a> --}}
                                 </div>
                             </div>
@@ -194,7 +176,7 @@
                                 <h2>We provide the best <span>Industrial</span> Services</h2>
                                 {{-- <p>An unknown printer took a galley of type and scrambled it to make a type specimen book.</p> --}}
                                 <div class="btns">
-                                    <a href="#" class="theme-btn">About us</a>
+                                    <a href="#" class="theme-btn">All Services</a>
                                     {{-- <a href="#" class="theme-btn-s2">Explore</a> --}}
                                 </div>
                             </div>
@@ -214,8 +196,8 @@
                             <h2>Get full range of premium Industrial services for your business</h2>
                         </div>                        
                         <div class="offer-text">
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna.</p>
-                            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p> --}}
+                            <p>Established in 2025, MPower Energy is a solutions-oriented company serving the electrical and power sector with a comprehensive range of products and engineering services.</p>
+                            <p>Our offerings include Generators and Spare Parts, Transformers, MV & LV Switchgear, Electrical Goods, Substations, Solar Energy Systems, ESS & Online UPS, Passenger Lifts, Interior Design & Studio, Electric Wheelchair, Web Development Services, Engineering, Procurement & Construction (EPC) Services, and Generator on Rental Basis.....</p>
                             <a href="#" class="theme-btn read-more">Read More</a>
                             <a href="#" class="theme-btn-s2 read-more">Company history</a>
                         </div>
@@ -252,6 +234,20 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="services-grids service-slider dots-s1">
+                            <div class="grid">
+                               <div class="inner mk-bg-img">
+                                    <div class="details ">
+                                       <div class="info">
+                                            <img src="{{ asset('assets/images/service-images/substation.png') }}" alt class="bg-image">
+                                            <a href="service-single.html">
+                                                <h3><i class="fi fa fa-industry"></i>Substation Transformer</h3>
+                                            </a>
+                                            {{-- <p>Ut enim ad minim veniam, quis nos trud exerci tation ullamco.</p> --}}
+                                            <a href="service-single.html" class="more">Get Details</a>
+                                       </div>
+                                    </div>
+                               </div>
+                            </div>
                             <div class="grid">
                                <div class="inner mk-bg-img">
                                     <div class="details ">
@@ -301,6 +297,34 @@
                                             <img src="{{ asset('assets/images/service-images/electrical-goods.png') }}" alt class="bg-image">
                                             <a href="service-single.html">
                                                 <h3><i class="fi fa fa-plug"></i> Electrical Goods</h3>
+                                            </a>
+                                            {{-- <p>Ut enim ad minim veniam, quis nos trud exerci tation ullamco.</p> --}}
+                                            <a href="service-single.html" class="more">Get Details</a>
+                                       </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="grid">
+                               <div class="inner mk-bg-img">
+                                    <div class="details ">
+                                       <div class="info">
+                                            <img src="{{ asset('assets/images/service-images/solar.png') }}" alt class="bg-image">
+                                            <a href="service-single.html">
+                                                <h3><i class="fi fa fa-sun-o"></i> Solar System</h3>
+                                            </a>
+                                            {{-- <p>Ut enim ad minim veniam, quis nos trud exerci tation ullamco.</p> --}}
+                                            <a href="service-single.html" class="more">Get Details</a>
+                                       </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="grid">
+                               <div class="inner mk-bg-img">
+                                    <div class="details ">
+                                       <div class="info">
+                                            <img src="{{ asset('assets/images/service-images/lift.png') }}" alt class="bg-image">
+                                            <a href="service-single.html">
+                                                <h3><i class="fi fa fa-arrows-v"></i> Passenger Lift</h3>
                                             </a>
                                             {{-- <p>Ut enim ad minim veniam, quis nos trud exerci tation ullamco.</p> --}}
                                             <a href="service-single.html" class="more">Get Details</a>
@@ -360,15 +384,17 @@
 
 
        <!-- start features --> 
-        <section class="features section-padding">
+        <section class="features features-left section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col col-lg-3 col-md-4">
+                    <div class="col col-xs-12">
                         <div class="section-title">
                             <h2>Why we are best</h2>
                         </div>
                     </div>
-                    <div class="col col-md-3 col-sm-4">
+                </div>
+                <div class="row">
+                    <div class="col col-md-2-5 col-sm-6">
                         <div class="feature-grid">
                             <div class="icon">
                                 <i class="fi fa fa-heart"></i>
@@ -380,7 +406,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-md-3 col-sm-4">
+                    <div class="col col-md-2-5 col-sm-6">
                         <div class="feature-grid">
                             <div class="icon">
                                 <i class="fi fa fa-star"></i>
@@ -392,7 +418,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-md-3 col-sm-4">
+                    <div class="col col-md-2-5 col-sm-6">
                         <div class="feature-grid">
                             <div class="icon">
                                 <i class="fi fa fa-clock-o"></i>
@@ -404,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-md-3 col-sm-4">
+                    <div class="col col-md-2-5 col-sm-6">
                         <div class="feature-grid">
                             <div class="icon">
                                 <i class="fi fa fa-shield"></i>
@@ -416,7 +442,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-md-3 col-sm-4">
+                    <div class="col col-md-2-5 col-sm-6">
                         <div class="feature-grid">
                             <div class="icon">
                                 <i class="fi fa fa-wrench"></i>
@@ -878,7 +904,7 @@
                     <div class="row">
                         <div class="col col-md-3 col-sm-6">
                             <div class="widget about-widget">
-                                {{-- <div class="footer-logo"><img src="{{ asset('assets/images/logo-1.png') }}" alt></div> --}}
+                                <div class="footer-logo"><img src="{{ asset('assets/images/logo_white.png') }}" alt></div>
                                 {{-- <ul class="contact-info">
                                     <li><i class="fa fa-home"></i> 555 Main St, Salt Lake City, UT 84101</li>
                                     <li><i class="fa fa-phone"></i> +1-(547)-257</li>
