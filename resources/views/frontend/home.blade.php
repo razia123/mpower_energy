@@ -112,19 +112,23 @@
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
                         <button class="close-navbar"><i class="fa fa-close"></i></button>
                         <ul class="nav navbar-nav">
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
                             {{-- <li><a href="services.html">Services</a></li> --}}
                              <li class="menu-item-has-children">
                                 <a href="#">Services</a>
                                 <ul class="sub-menu">
-                                    <li><a href="service-single.html">Service 1</a></li>
-                                    <li><a href="service-single.html">Service 1</a></li>
-                                    <li><a href="service-single.html">Service 1</a></li>
+                                    <li><a href="#">Substation Transformer</a></li>
+                                    <li><a href="#">Generator</a></li>
+                                    <li><a href="#">Generator Spare Parts</a></li>
+                                    <li><a href="#">Switch System</a></li>
+                                    <li><a href="#">Electrical Goods</a></li>
+                                    <li><a href="#">Solar System</a></li>
+                                    <li><a href="#">Passenger Lift</a></li>
                                 </ul>
                             </li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
                 </div><!-- end of container -->
@@ -226,7 +230,7 @@
                     </div>
                     <div class="col col-lg-3 col-md-3">
                        <div class="all-service-link">
-                            <a href="services.html" class="theme-btn">All services</a>
+                            <a href="#" class="theme-btn">All services</a>
                        </div>
                     </div>
                 </div> <!-- end row -->
@@ -789,9 +793,9 @@
                                     <label>Business Type</label>
                                     <select name="select">
                                         <option selected disabled> -- Select One -- </option>
-                                        <option value="Select One">Select One</option>
+                                        {{-- <option value="Select One">Select One</option>
                                         <option value="Select Two">Select Two</option>
-                                        <option value="Select Three">Select Three</option>
+                                        <option value="Select Three">Select Three</option> --}}
                                     </select>
                                 </div>
                                 <div class="submit-btn-wrap">
@@ -810,7 +814,7 @@
                 </div> <!-- end row -->
             </div> <!-- end container -->
             <div class="contact-women wow fadeInLeft">
-                <img src="assets/images/contact-women.png" alt>
+                {{-- <img src="assets/images/contact-women.png" alt> --}}
             </div>
         </section>
         <!-- end contact-section -->
